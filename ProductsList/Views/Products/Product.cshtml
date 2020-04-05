@@ -1,0 +1,19 @@
+﻿@model ProductsList.Models.Product
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="product">
+    <tr>
+        <td>Name</td>
+        <td>Amount</td>
+        <td>Unit</td>
+    </tr>
+    <tr>
+        <td>@Model.Name</td>
+        <td>@Model.Amount</td>
+        <td>@Model.Unit</td>
+    </tr>
+</table>
