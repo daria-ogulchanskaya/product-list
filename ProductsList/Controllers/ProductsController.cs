@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ProductsList.Models;
 using ProductsList.Services;
+using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 
 namespace ProductsList.Controllers
@@ -12,22 +13,36 @@ namespace ProductsList.Controllers
 
         public class AddProductViewModel
         {
-            public int Id { get; set; }
+            [Required]
             public string Name { get; set; }
+
+            [Required]
+            [Range(1, 100)]
             public string Amount { get; set; }
+
+            [Required]
             public Unit Unit { get; set; }
         }
 
         public class RemoveProductViewModel
         {
+            [Required]
             public int Id { get; set; }
         }
 
         public class UpdateProductViewModel
         {
+            [Required]
             public int Id { get; set; }
+
+            [Required]
             public string Name { get; set; }
+
+            [Required]
+            [Range(1, 100)]
             public string Amount { get; set; }
+
+            [Required]
             public Unit Unit { get; set; }
         }
 
@@ -56,7 +71,6 @@ namespace ProductsList.Controllers
         {
             var product = new Product
             {
-                Id = vm.Id,
                 Name = vm.Name,
                 Amount = vm.Amount,
                 Unit = vm.Unit
