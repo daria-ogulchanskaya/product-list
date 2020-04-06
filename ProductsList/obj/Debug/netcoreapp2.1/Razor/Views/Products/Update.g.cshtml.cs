@@ -97,7 +97,7 @@ WriteAttributeValue("", 404, Model.Amount, 404, 13, false);
             WriteLiteral(" /> </td>\r\n            <td>\r\n                <select id=\"units\">\r\n                    ");
             EndContext();
             BeginContext(504, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "efaf6784aa4e4df0bba7c4b2a5fa82c9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c43b707d39904644a98b27044f149454", async() => {
                 BeginContext(527, 6, true);
                 WriteLiteral("Pieces");
                 EndContext();
@@ -119,7 +119,7 @@ WriteAttributeValue("", 404, Model.Amount, 404, 13, false);
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(564, 36, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc9195ad55fa42ad9ad0ba24a7bbb5ff", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "def2478783bb4ac9b955001a1d80089c", async() => {
                 BeginContext(586, 5, true);
                 WriteLiteral("Liter");
                 EndContext();
@@ -141,7 +141,7 @@ WriteAttributeValue("", 404, Model.Amount, 404, 13, false);
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(622, 46, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "39957799d775480e826b71b2fb3acfe5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8cec23e74bb749749e430f406f767b8c", async() => {
                 BeginContext(649, 10, true);
                 WriteLiteral("Milliliter");
                 EndContext();
@@ -163,7 +163,7 @@ WriteAttributeValue("", 404, Model.Amount, 404, 13, false);
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(690, 34, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3609c1b8ee2c4111a86a8c747ca67052", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0de170c1ce0e4790947883f348cc9844", async() => {
                 BeginContext(711, 4, true);
                 WriteLiteral("Gram");
                 EndContext();
@@ -185,7 +185,7 @@ WriteAttributeValue("", 404, Model.Amount, 404, 13, false);
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(746, 42, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "706650d3ae774a3b924ec6621f0ae532", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5c78d272b3e14fa79f0518afd7f8ac12", async() => {
                 BeginContext(771, 8, true);
                 WriteLiteral("Kilogram");
                 EndContext();

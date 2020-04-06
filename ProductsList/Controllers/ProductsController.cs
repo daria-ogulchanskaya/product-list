@@ -66,8 +66,12 @@ namespace ProductsList.Controllers
         public ActionResult Get(int id) =>
             View(_products.Get(id));
 
+        [HttpGet]
+        public ActionResult Add() =>
+            View();
+
         [HttpPost]
-        public ActionResult Add([FromBody] AddProductViewModel vm)
+        public ActionResult Add([FromForm] AddProductViewModel vm)
         {
             var product = new Product
             {
@@ -81,10 +85,6 @@ namespace ProductsList.Controllers
             else
                 return RedirectToAction(nameof(Error));
         }
-
-        [HttpGet]
-        public ActionResult Add() =>
-            View();
 
         [HttpPost]
         public ActionResult Remove([FromBody] RemoveProductViewModel vm)
