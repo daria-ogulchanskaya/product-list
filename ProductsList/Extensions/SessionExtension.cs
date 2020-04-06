@@ -8,6 +8,10 @@ namespace ProductsList.Extensions
         public static T GetObject<T>(this ISession session, string key)
         {
             var json = session.GetString(key);
+
+            if (json == null)
+                return default;
+
             return JsonConvert.DeserializeObject<T>(json);
         }
 

@@ -1,20 +1,16 @@
-﻿@model ProductsList.Controllers.ProductsController
-@{
-    ViewData["Title"] = "Add product";
-}
+﻿@model ProductsList.Models.Product
 
-<h2>@ViewData["Title"]</h2>
-
-@using (Html.BeginForm("Add", "Products", FormMethod.Post))
+@using (Html.BeginForm("Update", "Products"))
 {
+    <input type="hidden" value="@Model.Id" name="Id" />
     <table>
         <tr>
-            <td align="center"><p>Name</p></td>
-            <td><input type="text" name="Name" /> </td>
+            <td><p>Name</p></td>
+            <td><input type="text" name="Name" value="@Model.Name" /> </td>
         </tr>
         <tr>
-            <td align="center"><p>Amount</p></td>
-            <td><input type="text" name="Amount" /> </td>
+            <td><p>Amount</p></td>
+            <td><input type="text" name="Amount" value="@Model.Amount" /> </td>
             <td>
                 <select id="units">
                     <option value="pieces">Pieces</option>
@@ -26,7 +22,7 @@
             </td>
         </tr>
         <tr>
-            <td><input type="submit" value="Add" /> </td>
+            <td><input type="submit" value="Update" /> </td>
             <td></td>
         </tr>
     </table>

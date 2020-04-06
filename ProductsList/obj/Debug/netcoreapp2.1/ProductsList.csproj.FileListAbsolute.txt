@@ -26,8 +26,8 @@ C:\Users\Кекс\source\repos\ProductsList\ProductsList\obj\Debug\netcoreapp2.1
 C:\Users\Кекс\source\repos\ProductsList\ProductsList\obj\Debug\netcoreapp2.1\ProductsList.dll
 C:\Users\Кекс\source\repos\ProductsList\ProductsList\obj\Debug\netcoreapp2.1\ProductsList.pdb
 C:\Users\Кекс\source\repos\ProductsList\ProductsList\obj\Debug\netcoreapp2.1\ProductsList.csproj.CopyComplete
-C:\Users\Кекс\source\repos\ProductsList\ProductsList\obj\Debug\netcoreapp2.1\Razor\Views\Products\AddProduct.g.cshtml.cs
-C:\Users\Кекс\source\repos\ProductsList\ProductsList\obj\Debug\netcoreapp2.1\Razor\Views\Products\Error.g.cshtml.cs
 C:\Users\Кекс\source\repos\ProductsList\ProductsList\obj\Debug\netcoreapp2.1\Razor\Views\Products\Product.g.cshtml.cs
-C:\Users\Кекс\source\repos\ProductsList\ProductsList\obj\Debug\netcoreapp2.1\Razor\Views\Products\ProductList.g.cshtml.cs
 C:\Users\Кекс\source\repos\ProductsList\ProductsList\obj\Debug\netcoreapp2.1\Razor\Views\Products\Index.g.cshtml.cs
+C:\Users\Кекс\source\repos\ProductsList\ProductsList\obj\Debug\netcoreapp2.1\Razor\Views\Products\Add.g.cshtml.cs
+C:\Users\Кекс\source\repos\ProductsList\ProductsList\obj\Debug\netcoreapp2.1\Razor\Views\Products\All.g.cshtml.cs
+C:\Users\Кекс\source\repos\ProductsList\ProductsList\obj\Debug\netcoreapp2.1\Razor\Views\Products\Update.g.cshtml.cs

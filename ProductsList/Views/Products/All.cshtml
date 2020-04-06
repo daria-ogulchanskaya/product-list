@@ -5,5 +5,55 @@
 
 <h2>@ViewData["Title"]</h2>
 
+<div class="col-md-10">
 
+</div>
+<div class="col-md-2 ">
+    <a asp-controller="Products" asp-action="Add" class="btn btn-info navbar-btn">Add Product</a>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Units</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{int i = 1;}
+        @if  (Model != null)
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@i</td>
+                    <td>@item.Name</td>
+                    <td>@item.Amount</td>
+                    <td>@item.Unit</td>
+                    <td>
+                        @using (Html.BeginForm("Get", "Products", new { id = item.Id }, FormMethod.Post))
+                        {
+                            <input type="submit" value="Detail" class="btn btn-dark" />
+                        }
+                    </td>
+                    <td>
+                        @using (Html.BeginForm("Update", "Products", new { id = item.Id }, FormMethod.Post))
+                        {
+                            <input type="submit" value="Edit" class="btn btn-dark" />
+                        }
+                    </td>
+                    <td>
+                        @using (Html.BeginForm("Remove", "Products", new { id = item.Id }, FormMethod.Post))
+                        {
+                            <input type="submit" value="Delete" class="btn btn-dark" />
+                        }
+                    </td>
+                </tr>
+                    i++;
+            }
+        }
+    </tbody>
+</table>
 
