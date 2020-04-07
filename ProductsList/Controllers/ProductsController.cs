@@ -2,76 +2,37 @@
 using Microsoft.AspNetCore.Mvc;
 using ProductsList.Models;
 using ProductsList.Services;
-using System.ComponentModel.DataAnnotations;
+using ProductsList.ViewModels;
 using System.Diagnostics;
 
 namespace ProductsList.Controllers
 {
     public class ProductsController : Controller
     {
-        #region Inner Types
-
-        public class AddProductViewModel
-        {
-            [Required]
-            public string Name { get; set; }
-
-            [Required]
-            [Range(1, 100)]
-            public string Amount { get; set; }
-
-            [Required]
-            public Unit Unit { get; set; }
-        }
-
-        public class RemoveProductViewModel
-        {
-            [Required]
-            public int Id { get; set; }
-        }
-
-        public class UpdateProductViewModel
-        {
-            [Required]
-            public int Id { get; set; }
-
-            [Required]
-            public string Name { get; set; }
-
-            [Required]
-            [Range(1, 100)]
-            public string Amount { get; set; }
-
-            [Required]
-            public Unit Unit { get; set; }
-        }
-
-        #endregion
-
         private readonly IProductsService _products;
 
         public ProductsController(IProductsService products) =>
             _products = products;
 
         [HttpGet]
-        public ActionResult Index() =>
+        public IActionResult Index() =>
             View();
 
         [HttpGet]
-        public ActionResult All() =>
+        public IActionResult All() =>
             View(_products.All());
 
         [HttpGet]
         [Route("/{id}")]
-        public ActionResult Get(int id) =>
+        public IActionResult Get(int id) =>
             View(_products.Get(id));
 
         [HttpGet]
-        public ActionResult Add() =>
+        public IActionResult Add() =>
             View();
 
         [HttpPost]
-        public ActionResult Add([FromForm] AddProductViewModel vm)
+        public IActionResult Add([FromForm] AddProductViewModel vm)
         {
             var product = new Product
             {
@@ -87,7 +48,7 @@ namespace ProductsList.Controllers
         }
 
         [HttpPost]
-        public ActionResult Remove([FromBody] RemoveProductViewModel vm)
+        public IActionResult Remove([FromForm] RemoveProductViewModel vm)
         {
             var product = _products.Get(vm.Id);
 
@@ -98,7 +59,7 @@ namespace ProductsList.Controllers
         }
 
         [HttpPost]
-        public ActionResult Update([FromBody] UpdateProductViewModel vm)
+        public IActionResult Update([FromForm] UpdateProductViewModel vm)
         {
             var product = new Product
             {
@@ -115,10 +76,10 @@ namespace ProductsList.Controllers
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public ActionResult Error()
+        public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ??
-                HttpContext.TraceIdentifier });
+            return View(new ErrorViewModel
+                { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

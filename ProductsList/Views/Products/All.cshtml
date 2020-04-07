@@ -23,8 +23,6 @@
     </thead>
     <tbody>
         @{int i = 1;}
-        @if  (Model != null)
-        {
             @foreach (var item in Model)
             {
                 <tr>
@@ -52,7 +50,6 @@
                     </td>
                 </tr>
                     i++;
-            }
         }
     </tbody>
 </table>

@@ -93,7 +93,7 @@ Write(ViewData["Title"]);
                     ");
             EndContext();
             BeginContext(543, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a969d00cf96445c7b437e46eb16c6fac", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0794967df9364e5bb775e3d8decd93cf", async() => {
                 BeginContext(566, 6, true);
                 WriteLiteral("Pieces");
                 EndContext();
@@ -115,7 +115,7 @@ Write(ViewData["Title"]);
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(603, 36, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a2562d523174bc6a524d9bb121cdba4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6190d615f5464ca89ca8b3a4c873f122", async() => {
                 BeginContext(625, 5, true);
                 WriteLiteral("Liter");
                 EndContext();
@@ -137,7 +137,7 @@ Write(ViewData["Title"]);
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(661, 46, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cedaf01ad3c6469ba8de03e72309dc28", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb4530b36c0543a3a086296272baacbf", async() => {
                 BeginContext(688, 10, true);
                 WriteLiteral("Milliliter");
                 EndContext();
@@ -159,7 +159,7 @@ Write(ViewData["Title"]);
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(729, 34, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "92dc76e3980944e0a3383411deeebdc7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bbacbfb17f3d45dc82367889cc3b2c6b", async() => {
                 BeginContext(750, 4, true);
                 WriteLiteral("Gram");
                 EndContext();
@@ -181,7 +181,7 @@ Write(ViewData["Title"]);
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(785, 42, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "37295720f4aa40468fc1ef03ea80ae11", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5504ba4cd0584deb9dc01bd919c4048b", async() => {
                 BeginContext(810, 8, true);
                 WriteLiteral("Kilogram");
                 EndContext();
