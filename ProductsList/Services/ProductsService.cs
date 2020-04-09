@@ -15,8 +15,6 @@ namespace ProductsList.Services
         public IEnumerable<Product> All()
         {
             var products = _http.HttpContext.Session.GetObject<List<Product>>("products");
-            if (products == null)
-                return null;
 
             return products;
         }
@@ -24,10 +22,10 @@ namespace ProductsList.Services
         public Product Get(int id)
         {
             var products = _http.HttpContext.Session.GetObject<List<Product>>("products");
-            if (products == null)
-                return null;
+            if (products != null)
+                return products.Find(x => x.Id == id);
 
-            return products.Find(x => x.Id == id);
+            return null;
         }
 
         public bool Add(Product product)
