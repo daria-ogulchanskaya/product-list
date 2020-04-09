@@ -41,7 +41,7 @@ namespace ProductsList.Controllers
                 Unit = vm.Unit
             };
 
-            if (_products.Add(product))
+            if (_products.Add(product) && ModelState.IsValid)
                 return RedirectToAction(nameof(All));
             else
                 return RedirectToAction(nameof(Error));
@@ -52,7 +52,7 @@ namespace ProductsList.Controllers
         {
             var product = _products.Get(vm.Id);
 
-            if (_products.Remove(product))
+            if (_products.Remove(product) && ModelState.IsValid)
                 return RedirectToAction(nameof(All));
             else
                 return RedirectToAction(nameof(Error));
@@ -69,7 +69,7 @@ namespace ProductsList.Controllers
                 Unit = vm.Unit
             };
 
-            if (_products.Update(product))
+            if (_products.Update(product) && ModelState.IsValid)
                 return RedirectToAction(nameof(All));
             else
                 return RedirectToAction(nameof(Error));
@@ -79,7 +79,9 @@ namespace ProductsList.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel
-                { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+                {
+                    RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
+                });
         }
     }
 }
